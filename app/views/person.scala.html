@@ -1,0 +1,17 @@
+@(mode: String, fellows: List[TestPerson])
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Persons</title>
+    </head>
+    <body>
+        <p>Current list of @mode person in database:</p>
+        <ol>
+            @for(fellow <- fellows) {
+            <li> @(fellow.firstName) @(fellow.lastName) </li>
+            }
+        </ol>
+    </body>
+</html>

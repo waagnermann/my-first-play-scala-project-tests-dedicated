@@ -1,0 +1,15 @@
+@(testJob: TestJob)
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>job</title>
+</head>
+<body>
+<p>Current personnel list by job with name = @(testJob.name) in database:</p>
+    @for(person <- testJob.personnel) {
+        <li> @(person.firstName) @(person.lastName) </li>
+    }
+</body>
+</html>
