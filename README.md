@@ -1,5 +1,5 @@
 # my-first-play-scala-project-tests-dedicated
-You can launch the app on your machine by entering the following in root directory of project
+You can launch the app on your machine by entering the following command in root directory of project
 ```bash
 sbt run
 ```
